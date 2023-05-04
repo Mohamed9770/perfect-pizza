@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(240, 216, 63);
+    background-image:url(https://c1.wallpaperflare.com/preview/816/993/186/food-drink-food-pizza-pizzas.jpg);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .pizza {
@@ -10,30 +10,38 @@ body {
     border-radius: 2em;
     width: 20em;
     display: inline-block;
-    
+    min-height: 20em;
     
 }
 H1 {
     text-align: center;
+    color:beige;
+}
+h2 {
+    color: beige;
+}
+h3 {
+    color: blanchedalmond;
 }
 
 .medium_pizza {
-    background-color: rgb(108, 30, 210);
-flex: 5
+    background-color: rgb(30, 210, 186);
+    flex: 5;
 }
 
 .large_pizza {
-    background-color: blue;
-    flex:3
+    background-color: rgb(255, 0, 187);
+    flex: 1;
 }
 
 .small_pizza {
-    background-color: rgb(97, 5, 100);
-    flex:1
+    background-color: rgb(5, 100, 98);
+    flex: 3;
 }
 
 .contact_us {
     background-color: crimson;
+    flex: 1;
 }
 .special{
     background-color: black;
@@ -53,5 +61,10 @@ flex: 5
         background-color: rgba(245, 239, 245, 0.948);
         
     }
+}    
+
+
+    
+  
     
 }
