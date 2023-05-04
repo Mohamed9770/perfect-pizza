@@ -41,7 +41,7 @@ h3 {
 
 .contact_us {
     background-color: crimson;
-    width:50em;
+    flex: 1;
     margin-top: 0em;
 }
 .special{
