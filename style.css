@@ -24,6 +24,31 @@ h3 {
     color: blanchedalmond;
 }
 
+.shopping_cart {
+    background-color:chartreuse;
+    border: 1px solid rgb(30, 210, 45);
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0.5em;
+
+}
+.ss {
+    text-align: center;
+}
+.mm {
+    text-align: center;
+}
+.ll {
+    text-align: center;
+}
+.tt {
+    text-align: center;
+}
+.pay {
+    text-align: center;
+    display: none;
+}
+
 .medium_pizza {
     background-color: rgb(30, 210, 186);
     flex: 5;
@@ -41,6 +66,10 @@ h3 {
 
 .contact_us {
     background-color: crimson;
+    border: 1px solid rgb(30, 210, 45);
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0.5em;
 
 }
 .special{

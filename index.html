@@ -7,10 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Pizza</title>
     <link rel="stylesheet" href="style.css">
+    <script src="pizza.js" defer ></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
     <h1>Perfect Pizza</h1>
+    <div class="shopping_cart">
+        <h1 style="text-align: center;">Order Pizza</h1>
+
+        <div x-data="{ smallTitle: 'Small', mediumTitle: 'Medium',
+        largeTitle: 'Large', smallPizzaTotal: 0, mediumPizzaTotal: 0,
+        largePizzaTotal: 0, totalCostTitle: 'Total Cost', totalCost: 0 }">
+            <div class="cart">
+                
+                <div class="ss">
+                    <span x-text="smallTitle"></span>
+                    <button @click=" smallPizzaTotal += 49;">+</button>
+                    <button @click=" if( smallPizzaTotal > 0 ){ 
+                    smallPizzaTotal -= 49 }">-</button>
+                    <span x-text="smallPizzaTotal"></span>
+                </div>
+                <div class="mm">
+                    <span x-text="mediumTitle"></span>
+                    <button @click=" mediumPizzaTotal += 89;">+</button>
+                    <button @click=" if( mediumPizzaTotal > 0 ){ 
+                    mediumPizzaTotal -= 89 }">-</button>
+                    <span x-text="mediumPizzaTotal"></span>
+                </div>
+                <div class="ll">
+                    <span x-text="largeTitle"></span>
+                    <button @click=" largePizzaTotal += 129;">+</button>
+                    <button @click=" if( largePizzaTotal > 0 ){ 
+                    largePizzaTotal -= 129 }">-</button>
+                    <span x-text="largePizzaTotal"></span>
+                </div>
+                <div class="tt">
+                    <h1 style="text-align: center;">Pizza Cart</h1>
+                    <span x-text="totalCostTitle"></span>
+                    <span x-text="totalCost = smallPizzaTotal + mediumPizzaTotal + largePizzaTotal" ></span>
+                    <br>
+                    <br>
+                    <button class="check" on-click="pay.style.display='block';">Check Out</button>
+                </div>
+            </div> 
+            <br>
+            <br>
+<div class="pay" id="pay">
+    <label>Payment Amount:</label>
+  <input type="text" class="pay" id="pay">
+ 
+   
+</div>
+
+        
+    </div>
+</div>
 
 
     <div class="pizza small_pizza">
@@ -41,7 +93,7 @@
         </div>
     </div>
 
-    <div class="pizza contact_us">
+    <div class="contact_us">
         <h2>Contact details</h2>
 
         Contact us at:011341231 info@perfectpizza.co.za
